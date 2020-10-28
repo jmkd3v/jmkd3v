@@ -19,3 +19,10 @@ Links:
 - [📢 Follow me on Twitter](http://redirects.jmksite.dev/links/twitterfollow/)
 - [📧 Send me an e-mail](http://redirects.jmksite.dev/links/email/)
 - ➕ More links will be added soon!
+
+Progress:
+- [ ] Fix https://github.com/parappadev/ptr2inject
+- [ ] Work on a secret project
+- [ ] Add https://github.com/parappadev/jmkfreecam to that secret project
+- [ ] Work on https://www.roblox.com/games/5846156598/ (Google Cardboard Support)
+- [x] Finish https://www.roblox.com/games/5617763051/
