@@ -3,12 +3,12 @@
 
 Welcome to my GitHub profile!
 
-I develop with:
+Languages:
 - 🐍 Python
 - 🎮 Lua (Roblox Luau and Cheat Engine Lua)
 - 📜 JavaScript
 - ☕ Java
-- 🌐 HTML and CSS (not a language)
+- 🌐 HTML and CSS (not languages, but we'll go with it)
 
 Links:
 - [🌐 Visit my website](https://redirects.jmksite.dev/sites/home)
@@ -26,3 +26,7 @@ Progress:
 - [ ] Add https://github.com/parappadev/jmkfreecam to that secret project
 - [ ] Work on https://www.roblox.com/games/5846156598/ (Google Cardboard Support)
 - [x] Finish https://www.roblox.com/games/5617763051/
+
+Stats:  
+[![jmk-developer's GitHub statistics](https://github-readme-stats.vercel.app/api?username=jmk-developer&count_private=true&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+
