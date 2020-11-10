@@ -30,5 +30,4 @@ Progress:
 Stats:  
 ![jmk-developer's GitHub statistics](https://github-readme-stats.vercel.app/api?username=jmk-developer&count_private=true&show_icons=true)
 
-Roblox Profile:
-![](./profile.svg)
+![](./test.svg)
