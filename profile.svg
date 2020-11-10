@@ -102,10 +102,4 @@
             <i class="material-icons rightSpacing" id="friends">group</i> friends
           </li>
           <li>
-            <i class="material-icons rightSpacing" id="followers">groups</i> followers
-          </li>
-          <li>
-            <i class="material-icons rightSpacing" id="followers">supervisor_account</i> following
-          </li>
-        </ul>
-        </di
+            <i class=
