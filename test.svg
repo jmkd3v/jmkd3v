@@ -1,7 +1,328 @@
 <svg fill="none" viewBox="0 0 1024 768" width="1024" height="768" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
     <div xmlns="http://www.w3.org/1999/xhtml">
-      <h1>Test</h1>
+      <style>
+        body {
+  background-image: url("https://cdn.glitch.com/c9aca3ea-4558-456b-8206-a8f36b94cd20%2Fmountainimg.png?v=1597347374373"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; 
+  font-family: "nasalizationregular"
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+.button {
+  cursor: pointer;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.25s;
+}
+
+.button:hover:not(.active) {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.inroot {
+  width: calc(100% - 75px);
+  height: calc(100% - 75px);
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  
+  -webkit-box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 40px 2px rgba(0,0,0,0.75);
+  
+  
+  backdrop-filter: blur(10px);
+  
+  border-radius: 25px;
+  
+  transition: border-radius 1s;
+}
+
+.inroot.noEdges {
+  border-radius: 0px; 
+}
+
+.roottext {
+  position: relative;
+  top: 30px;
+  color: white;
+  text-align: center;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+.roottext.hidden {
+  opacity: 0;
+}
+
+.rootinherit {
+  text-align: center;
+  color: white;
+}
+
+.rootlink {
+  color: white;
+}
+
+.rootpopup {
+  position: absolute;
+  display: flex;
+  
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  
+  background-color: rgba(0, 0, 0, 0.75);;
+  
+  width: 300px;
+  height: 400px;
+  
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  
+  text-align: center;
+  
+  transition: opacity 0.5s;
+  border-radius: 10px;
+  
+  
+}
+
+.rootalert {
+  display: none;
+}
+
+
+.rootalert-text {
+  color: white;
+}
+
+.rootalert-title {
+  position: relative;
+  top: 5%;
+  width: 100%;
+  height: 25%;
+  font-size: 35px;
+}
+
+.rootalert-content {
+  position: relative;
+  width: 90%;
+  height: 25%;
+  font-size: 15px;
+  padding: 5%;
+}
+
+.rootalert-buttons {
+  position: absolute;
+  bottom: 0%;
+  width: 90%;
+  height: 25%;
+  font-size: 15px;
+  padding: 5%;
+  list-style-type: none;
+  
+  
+}
+
+.rootalert-buttons > li {
+  height: 100%;
+  color: white;
+  float: left;
+  width: calc(50% - 30px);
+  
+  padding: 15px;
+}
+.rootalert-buttons > li > div {
+  display: inline-block;
+  
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  
+  text-align: center;
+  
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
+  
+}
+
+
+
+
+
+
+
+.discordframe {
+  position: relative;
+  left: 90%
+}
+
+.dimmer {
+  display: none;
+	background: #000;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.exit {
+  font-size: 100px;
+  color: red;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.rootDownload {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.settingsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 60px;
+  margin: auto;
+}
+
+.loadingscreen {
+  position: fixed;
+  bottom: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  transition: bottom 0.5s
+  
+}
+
+.loadingscreen.showing {
+  bottom: 0;
+}
+
+.innerdrop {
+  position: fixed;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  height: 100%;
+  
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 500;
+  pointer-events: none;
+  
+  -webkit-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 40px 0px rgba(0,0,0,0.75);
+}
+
+.rootpopup > iframe {
+  width: 100%;
+  height: 80%;
+}
+
+.rootpopup > .rootpopup-buttons {
+  
+  align-items: stretch;
+  flex-direction: row;
+  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  
+  top: 80%;
+  width: 100%;
+  height: 20%;
+}
+
+.rootpopup > .rootpopup-buttons > div {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0;
+  
+  
+  width: calc(50% - 25px);
+  height: calc(100% - 25px);
+  border-radius: 5px;
+}
+
+.rootpopup > .rootpopup-buttons > div > p {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+      </style>
+      
     </div>
   </foreignObject>
 </svg>
