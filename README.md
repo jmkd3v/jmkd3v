@@ -1,5 +1,5 @@
 # 👋 Hello!
-### ❔ I'm jmk-developer (or jmkdev for short).
+### ❔ I'm jmkdev.
 
 Welcome to my GitHub profile!
 
