@@ -1,1 +1,2 @@
-This readme is being rewritten. For now, just visit my website at https://jmk.gg/
+# Hi, I'm jmkdev! 👋 
+I make cool things with the Roblox web API! 
